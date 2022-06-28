@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".MainActivity">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar5"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:background="@color/naranjatroll"
+        android:minHeight="?attr/actionBarSize"
+        android:theme="?attr/actionBarTheme"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:title="Zumotroll: AYUDA"
+        app:titleMargin="4dp"
+        app:titleTextAppearance="@style/TextAppearance.AppCompat.Medium" />
+
+    <Button
+        android:id="@+id/volver3"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:background="@drawable/narajanjatroll_izquierda"
+        android:onClick="volver"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <ScrollView
+        android:layout_width="342dp"
+        android:layout_height="675dp"
+        android:layout_marginTop="20dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.768"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/toolbar5">
+
+        <EditText
+            android:id="@+id/editTextTextMultiLine2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:gravity="start|top"
+            android:inputType="textMultiLine"
+            android:text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce ut iaculis mi. Nunc at fringilla erat. Pellentesque id nulla risus. Integer ultrices sed erat at facilisis. In mi nisl, malesuada ut posuere id, porttitor et est. Nunc non interdum tortor. Nulla et risus vitae ligula mollis tincidunt in vel velit. Nulla eget fringilla arcu, vel viverra sapien.
+
+    Nam lobortis accumsan erat, et dignissim sem sagittis in. Vestibulum in scelerisque nisi. Sed nec molestie libero. Phasellus ultrices aliquam urna, ac dapibus justo luctus at. Aliquam ac pharetra ex. Donec sodales lorem at eleifend molestie. Nullam nunc turpis, tristique quis sollicitudin blandit, cursus et erat. Maecenas eget massa luctus, accumsan enim quis, eleifend arcu. Donec nec sagittis arcu. Quisque semper purus eu libero tristique fermentum.
+
+    Maecenas mattis dictum dolor, nec venenatis est malesuada a. Fusce pellentesque fringilla euismod. Donec dignissim consequat iaculis. Nunc porttitor tellus nisi, quis pulvinar mauris varius vel. Suspendisse ut auctor arcu. Nulla at semper tellus. Nam vestibulum nunc ac erat elementum, a porttitor dui gravida. Aliquam laoreet accumsan turpis, in lobortis turpis tincidunt in. Donec vitae diam nunc. Sed volutpat eros nisi, at imperdiet quam tempus non. Donec ultrices sem at euismod efficitur. Quisque ac eleifend nulla. Duis vel diam erat. Curabitur suscipit orci vel rutrum ornare.
+
+    In laoreet volutpat lectus, sit amet ullamcorper orci convallis a. Aenean pharetra est eu placerat condimentum. Pellentesque mollis elit laoreet pharetra convallis. Cras magna nulla, facilisis at gravida eget, lacinia in erat. Maecenas sagittis cursus congue. Nam blandit ex risus, at feugiat augue ultricies eget. Suspendisse interdum, est in interdum accumsan, urna justo finibus ligula, a auctor nunc tortor non est. Nam egestas mollis ante, et consectetur augue euismod sed. Pellentesque elementum mauris id sem convallis consequat. Vestibulum vel nisi vel felis placerat faucibus. Praesent mattis ipsum eget mattis varius.
+
+    Fusce lacinia non metus vel ultricies. Ut quam augue, hendrerit at accumsan ut, euismod et ex. In tortor dolor, suscipit ac efficitur ut, pulvinar sit amet ex. Nulla tempus gravida mauris nec aliquet. Morbi eget magna orci. Sed scelerisque tellus eget quam gravida, a accumsan sem auctor. Sed id vehicula augue. Vivamus ac ligula malesuada, euismod erat quis, convallis nunc. Mauris facilisis nunc neque, vel ultrices ligula ullamcorper ac. Praesent sed tincidunt dolor. Mauris dapibus nibh quis quam facilisis, vel venenatis tellus egestas. Quisque lorem lectus, vulputate vitae semper a, scelerisque eu diam."
+            android:clickable="false" android:cursorVisible="false" android:focusable="false" android:focusableInTouchMode="false"
+            android:textColor="@color/black"
+            />
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

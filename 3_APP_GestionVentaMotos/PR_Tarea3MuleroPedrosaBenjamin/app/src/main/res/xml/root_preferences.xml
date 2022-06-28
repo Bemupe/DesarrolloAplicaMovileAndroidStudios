@@ -1,0 +1,11 @@
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/black">
+    <CheckBoxPreference
+        android:id="@+id/prefe"
+        android:defaultValue="false"
+        android:key="prefe"
+        android:title="Sólo motos vendidas"
+        app:key="prefe" />
+
+</PreferenceScreen>

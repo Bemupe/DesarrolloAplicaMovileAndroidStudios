@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/darker_gray"
+    tools:context=".Pintando">
+
+    <view
+        android:id="@+id/id_lienzo"
+        class="com.example.muleropedrosa.tarea04pmdmmuleropedrosabenjamin04.Lienzo"
+        android:layout_width="374dp"
+        android:layout_height="491dp"
+        android:layout_marginTop="16dp"
+        android:background="@color/white"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.487"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/id_boton_volver"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@color/rojo_dibuja"
+        android:onClick="volverAtras"
+        android:text="Volver"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/id_lienzo"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <Button
+        android:id="@+id/id_boton_limpiar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@color/rojo_dibuja"
+        android:onClick="borrar"
+        android:text="Limpiar"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="@+id/id_boton_volver"
+        app:layout_constraintTop_toBottomOf="@+id/id_lienzo"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <LinearLayout
+        android:id="@+id/linearLayout3"
+        android:layout_width="167dp"
+        android:layout_height="102dp"
+        android:background="@drawable/bordes_redondo_boton"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/id_boton_limpiar"
+        app:layout_constraintStart_toEndOf="@+id/id_boton_volver"
+        app:layout_constraintTop_toBottomOf="@+id/id_lienzo">
+
+        <LinearLayout
+            android:id="@+id/linear_layout_ho_1"
+            android:layout_width="121dp"
+            android:layout_height="54dp"
+            android:orientation="horizontal">
+
+            <ImageButton
+                android:id="@+id/id_boton_estrella"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:backgroundTint="@color/white"
+                android:onClick="pintaEstrella"
+                app:srcCompat="@drawable/start_negra" />
+
+            <ImageButton
+                android:id="@+id/id_boton_cara"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:backgroundTint="@color/white"
+                android:onClick="pintaMiCara"
+                app:srcCompat="@drawable/mi_cara" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/linear_layout_ho_2"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:orientation="horizontal">
+
+            <ImageButton
+                android:id="@+id/id_boton_rojo"
+                android:layout_width="55dp"
+                android:layout_height="50dp"
+                android:backgroundTint="@color/white"
+                android:onClick="dibujaRojo"
+                app:srcCompat="@drawable/bordes_redondo_rojo" />
+
+            <ImageButton
+                android:id="@+id/id_boton_azul"
+                android:layout_width="55dp"
+                android:layout_height="50dp"
+                android:backgroundTint="@color/white"
+                android:onClick="dibujaAzul"
+                app:srcCompat="@drawable/bordes_redondo_azul" />
+
+            <ImageButton
+                android:id="@+id/id_boton_amarillo"
+                style="@style/Widget.AppCompat.ImageButton"
+                android:layout_width="55dp"
+                android:layout_height="50dp"
+                android:backgroundTint="@color/white"
+                android:onClick="dibujaAmarillo"
+                app:srcCompat="@drawable/bordes_redondo_amarillo" />
+        </LinearLayout>
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

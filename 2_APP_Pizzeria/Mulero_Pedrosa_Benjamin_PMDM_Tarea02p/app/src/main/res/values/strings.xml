@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">Mulero_Pedrosa_Benjamin_PMDM_Tarea02</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="id_nombre">Nombre</string>
+    <string name="id_primer_apellido">Primer apellido</string>
+    <string name="id_telefono">Número de teléfono</string>
+    <string name="id_direccion">Dirección</string>
+    <string name="id_spinner1">Señalar recogida</string>
+
+</resources>
